@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zembrzus-Games 20250513 -- </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            /* border:1px solid red; */
+        }
+        html, body, main{
+            height:100%;
+            background:#0C0D14;
+        }
+        header{
+            color:white;
+            padding:0.5em;
+            position:fixed;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            width:100%;
+            height:50px;
+            background-color:rgba(33, 34, 51, 0.5);
+            backdrop-filter: blur(10px);
+            box-shadow:3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+        #thumbs{
+            display:grid;
+            grid-template-columns: 1;
+            gap:0.5em;
+            padding:10px;
+            padding-top:60px;
+        }
+        .thumb{
+            padding:10px;
+            /* width:10em; */
+            height:6em;
+            border-radius:0.5em;
+            background:gray;
+            color:white;
+            display:flex;
+            justify-content: end;
+            align-items: end;;
+        }
+
+        .hc {}
+        .hc img :hover {
+            transform: scale(1.5);
+        }
+
+        #logo{
+            width:100px;
+            height:50px;
+        }
+        #logo > img{
+            width:100px;
+        }
+        .main-btn{
+            background:#6842ff;
+            color:white;
+            font-size:12px;
+            font-weight:bold;
+            padding:5px 15px;
+            border:none;
+            border-radius:15px;
+        }
+        #user-menu{
+            display:flex;
+            gap:5px;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+        #search{
+            display:flex;
+            gap:5px;
+            align-items: center;
+            background:#373952;
+            padding:5px 20px;
+            border-radius:18px;
+        }
+        .search-input{
+            background:none;
+            border:none;
+            outline:none;
+            color:white;
+        }
+        @media screen and (min-width: 500px) {
+            #thumbs{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            #thumbs{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div id="logo">
+                <img src="zembialy.png" alt="">
+            </div>
+            <div id="search">
+                <input class="search-input" type="text" placeholder="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+            </div>
+            
+            <div id="user-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                <button class="main-btn">Log in</button>
+            </div>
+        </header>
+        <section id="hero"></section>
+        <section id="thumbs">
+            <div class="thumb">
+                <img class="hc" src="arkanoid">
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+            <div class="thumb">
+                Game 1
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </main>  
+</body>
+</html>
+
